@@ -10,3 +10,4 @@ for i in range(int(input())):
             print("ERROR", e)
     else:
         print("ERROR")
+
