@@ -1,4 +1,5 @@
 import re
+from colorama import Fore
 
 for i in range(int(input())):
     expr = input()
@@ -7,6 +8,6 @@ for i in range(int(input())):
             result = eval(expr)
             print(result)
         except Exception as e:
-            print("ERROR", e)
+            print(Fore.RED + "ERROR", e)
     else:
-        print("ERROR")
+        print(Fore.RED + "ERROR")
